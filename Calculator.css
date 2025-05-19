@@ -1,0 +1,94 @@
+/* Reset some defaults */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+ .background-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("calculator.jpg");  /* ✅ Image path */
+  background-size: cover;
+  background-position: center;
+  filter: blur(6px);  /* ✅ Apply blur */
+  z-index: -1;         /* ✅ Send it behind everything */
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+  .calculator {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 300px;
+  }
+  
+  .display {
+  grid-column: span 4;
+  background-color: #222;
+  color: #0f0;
+  text-align: right;
+  padding: 15px;
+  font-size: 24px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+
+  /* ✅ Add these to prevent overflow */
+  white-space: nowrap;         /* Keep text in one line */
+  overflow-x: auto;            /* Allow horizontal scrolling if too long */
+  overflow-y: hidden;
+  text-overflow: ellipsis;     /* Add ... when text is too long */
+}
+
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  
+  button {
+    padding: 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ccc;
+  }
+  
+  button.operator {
+    background-color: #ff9500;
+    color: white;
+  }
+  
+  button.operator:hover {
+    background-color: #e08900;
+  }
+  
+  button.equal {
+    background-color: #34c759;
+    color: white;
+    grid-column: span 2;
+  }
+  
+  button.equal:hover {
+    background-color: #28a745;
+  }
+  
