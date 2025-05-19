@@ -5,7 +5,7 @@ This is a basic calculator web app built using **HTML**, **CSS**, and **JavaScri
 ## 🚀 Features
 
 - Addition, Subtraction, Multiplication, Division
-- Clear (`AC`) and Delete (`DEL`) functions
+- Clear (`C`)  functions
 - Keyboard-friendly interface (optional to implement)
 - Simple, clean UI with centered layout
 - Background image with slight blur for aesthetics
