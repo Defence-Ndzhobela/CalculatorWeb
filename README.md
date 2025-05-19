@@ -18,8 +18,7 @@ This is a basic calculator web app built using **HTML**, **CSS**, and **JavaScri
 
 ## 📷 Screenshot
 
-![Calculator Screenshot](./readme.jpg)  
-> (Optional: Replace this image path with a live screenshot of your app)
+![image alt](https://github.com/Defence-Ndzhobela/CalculatorWeb/blob/d04d79d18a5386d8a6bcb420dd94e2e762c1718f/readme.png)
 
 ## 📁 Project Structure
 
